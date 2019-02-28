@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: #fff;
+}
+
+#main{
+  width: 100%;
+  display: flex;
+}
+
+#main #to-movie, #to-photo, #to-namelist {
+  position: relative;
+  width: 33.33%;
+  height: 0vh;
+}
+
+#main a#to-movie {
+  /* transform: translateY(-100%); */
+  height: 0vh;
+  background: #E42B30;
+}
+
+#main a#to-photo {
+  /* transform: translateY(-100%); */
+  display: hidden;
+  height: 0vh;
+  background: #0080BD;
+  /* z-index: -1; */
+}
+
+#main a#to-namelist {
+  /* transform: translateY(-100%); */
+  display: hidden;
+  height: 0vh;
+  background: #B0CC41;
+  /* z-index: -1; */
+}
+
+@keyframes roll {
+  0% {
+    height: 0vh;
+    /* z-index: 1; */
+  }
+  100% {
+    height: 100vh;
+    /* z-index: 1; */
+  }
+}
+
+.anime {
+  animation: roll 1s;
+}
+
+.anime2 {
+  animation: roll 1s;
+  animation-delay: .1s;
+  /* z-index: 1; */
+}
+
+.anime3 {
+  animation: roll 1s;
+  animation-delay: .2s;
+  /* z-index: 1; */
+}
+
+
+
+@media screen and (max-width:420px) {
+  #main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #main #to-movie {
+    position: inherit;
+    width: 100%;
+    height: 33.33vh;
+    /* transform: translateY(0%); */
+  }
+
+  #main #to-photo {
+   position: inherit;
+   display: relative;
+   width: 100%;
+   height: 33.33vh;
+   z-index: -2;
+   /* transform: translateY(0%); */
+ }
+
+ #main #to-namelist {
+  position: inherit;
+  display: relative;
+  width: 100%;
+  height: 33.33vh;
+  z-index: -1;
+  /* transform: translateY(0%); */
+}
+
+.anime {
+  animation: roll 1s;
+  /* animation-delay: -2s; */
+}
+
+  .anime2 {
+    animation: roll2 1s;
+    /* z-index: 1; */
+  }
+
+  .anime3 {
+    animation: roll3 1s;
+    animation-duration: 1s;
+    /* z-index: 1; */
+  }
+
+  @keyframes roll {
+    0% {
+      /* width: 0%; */
+      transform: translateY(-100%);
+      /* z-index: 1; */
+    }
+    100% {
+      /* width: 100%; */
+      transform: translateY(0%);
+      /* z-index: 1; */
+    }
+  }
+
+    @keyframes roll2 {
+      0% {
+        /* width: 0%; */
+        transform: translateY(-100%);
+        /* z-index: 1; */
+      }
+      100% {
+        /* width: 100%; */
+        transform: translateY(0%);
+        /* z-index: 1; */
+      }
+  }
+
+  @keyframes roll3 {
+    0% {
+      /* width: 0%; */
+      transform: translateY(-100%);
+      /* z-index: 1; */
+    }
+    100% {
+      /* width: 100%; */
+      transform: translateY(0%);
+      /* z-index: 1; */
+    }
+}
+
+  #main a#to-movie {
+    /* width: 0%; */
+    transform: translateY(33.33%);
+    background: #E42B30;
+  }
+
+  #main a#to-photo {
+    /* width: 0%; */
+    transform: translateY(33.33%);
+    background: #0080BD;
+    /* z-index: -1; */
+  }
+
+  #main a#to-namelist {
+    /* width: 0%; */
+    transform: translateY(33.33%);
+    background: #B0CC41;
+    /* z-index: -1; */
+  }
+}

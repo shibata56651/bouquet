@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>bouquet | トップページ</title>
+</head>
+
+<body>
+  <!-- <div id="front">
+    <div id="fr-mov">
+
+    </div>
+    <div id="fr-photo">
+
+    </div>
+    <div id="fr-namelist">
+
+    </div>
+  </div> -->
+<div id="main">
+<a href="" id="to-movie">
+<h1>Movie</h1>
+  </a>
+  <a href="" id="to-photo">
+<h1>Photo</h1>
+  </a>
+  <a href="" id="to-namelist">
+<h1>List</h1>
+  </a>
+</div>
+
+
+<div id="nav-toggle">
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div id="gloval-nav">
+    <nav>
+        <ul>
+            <li><a href="#">MOVIE</a></li>
+            <li><a href="#">PHOTO</a></li>
+            <li><a href="#">LIST</a></li>
+            <li><a href="#">COMMENT</a></li>
+        </ul>
+    </nav>
+</div>
+<script src="js/move.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {
+    $(function () {
+        $('#nav-toggle').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+})(jQuery);
+</script>
+</body>
+
+</html>
